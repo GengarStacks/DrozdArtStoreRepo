@@ -1,0 +1,9 @@
+D:\DrozdArtStore deployed\DrozdArtStore.Utility\bin\Release\netcoreapp3.1\DrozdArtStore.Utility.deps.json
+D:\DrozdArtStore deployed\DrozdArtStore.Utility\bin\Release\netcoreapp3.1\DrozdArtStore.Utility.dll
+D:\DrozdArtStore deployed\DrozdArtStore.Utility\bin\Release\netcoreapp3.1\DrozdArtStore.Utility.pdb
+D:\DrozdArtStore deployed\DrozdArtStore.Utility\obj\Release\netcoreapp3.1\DrozdArtStore.Utility.csprojAssemblyReference.cache
+D:\DrozdArtStore deployed\DrozdArtStore.Utility\obj\Release\netcoreapp3.1\DrozdArtStore.Utility.AssemblyInfoInputs.cache
+D:\DrozdArtStore deployed\DrozdArtStore.Utility\obj\Release\netcoreapp3.1\DrozdArtStore.Utility.AssemblyInfo.cs
+D:\DrozdArtStore deployed\DrozdArtStore.Utility\obj\Release\netcoreapp3.1\DrozdArtStore.Utility.csproj.CoreCompileInputs.cache
+D:\DrozdArtStore deployed\DrozdArtStore.Utility\obj\Release\netcoreapp3.1\DrozdArtStore.Utility.dll
+D:\DrozdArtStore deployed\DrozdArtStore.Utility\obj\Release\netcoreapp3.1\DrozdArtStore.Utility.pdb

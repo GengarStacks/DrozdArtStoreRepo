@@ -1,0 +1,107 @@
+﻿@page
+@model DrozdArtStore.Pages.Customer.Home.DetailsModel
+@{
+}
+
+
+<div class="">
+    <form method="post">
+        <input type="hidden" asp-for="ShoppingCartObj.MenuItemId" />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="container backgroundWhite">
+            <div class="card">
+                <div class="card-header bg-light text-light ml-0 row container">
+                    <div class="col-12 col-md-6">
+                        <h1 class="text-primary">@Model.ShoppingCartObj.MenuItem.Name</h1>
+                    </div>
+                    <div class="col-12 col-md-6 text-md-right">
+                        <h1 class="text-muted">@Model.ShoppingCartObj.MenuItem.Price.ToString()$</h1>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="container rounded p-2">
+                        <div class="row">
+                            <div class="col-12 col-lg-8">
+                                <div class="row">
+
+                                    <div class="col-12">
+                                        <span class="badge badge-warning h3">@Model.ShoppingCartObj.MenuItem.Category.Name</span>
+                                        <span class="badge badge-dark">@Model.ShoppingCartObj.MenuItem.ItemType.Name</span>
+                                        <h3 class="text-success"></h3>
+
+                                        <p class="text-secondary">@Html.Raw(Model.ShoppingCartObj.MenuItem.Description) <b> Available in a digital version upon request.</b></p>
+
+                                        <div class="row py-4">
+                                            <div class="col-2"><label asp-for="ShoppingCartObj.Count" class="h3"></label></div>
+                                            <div class="col-10">
+                                                <input asp-for="ShoppingCartObj.Count" class="form-control rounded" height:"40px"; />
+                                                <span asp-validation-for="ShoppingCartObj.Count" class="text-danger"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 p-1 text-center">
+                                <img id="myImg" src="@Model.ShoppingCartObj.MenuItem.Image" alt="Snow" style="width:100%;max-width:300px;" />
+                            </div>
+                            <div id="myModal" class="modal">
+
+                                <!-- The Close Button -->
+                                <span class="close">&times;</span>
+
+                                <!-- Modal Content (The Image) -->
+                                <img class="modal-content" id="img01">
+
+                                <!-- Modal Caption (Image Text) -->
+                                <div id="caption"></div>
+                                <div class="text-center text-white"><p>Hold Control button and scroll to zoom</p></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-12 col-md-6 pb-1 ">
+                            <a asp-page="Index" class="btn btn-success btn-square form-control btn-lg" height:"30px"; style="z-index: unset">Back to List</a>
+                        </div>
+                        <div class="col-12 col-md-6 ">
+                            <button type="submit" class="btn btn-primary btn-square form-control btn-lg" height:"30px"; style="z-index: unset">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        } 
+    </script>
+}
+

@@ -1,0 +1,62 @@
+﻿@page
+@model DrozdArtStore.Pages.Customer.Home.IndexModel
+@using DrozdArtStore.Utility
+@{
+}
+
+@if (!User.IsInRole(SD.CustomerRole) && !User.IsInRole(SD.ManagerRole))
+
+{
+    <div>
+        <p class="text-center text-warning" style="font-size: larger;">Sign in to view the details or make purchase. </p>
+    </div>
+}
+
+@foreach (var category in Model.CategoryList)
+{
+    @if (Model.MenuItemList.Where(c => c.CategoryId == category.Id).Count() > 0)
+    {
+        <div class="container pb-3 bg-light pt-2">
+            <div class="col-12">
+                <div class="row">
+                    <h2 class="text-secondary pl-1"><b>@category.Name</b></h2>
+
+                    <div class="col-12">
+                        <div class="row my-3">
+                            @foreach (var menuItem in Model.MenuItemList.Where(c => c.CategoryId == category.Id))
+                            {
+                                <div class="col-lg-3 col-xl-3 col-md-6 pg-4 pb-2">
+                                    <div class="card" style="border: 1px solid;border-radius: 5px">
+                                        <div class="pl-3 pt-1 text-center">
+                                            <h3 class="card-title text-primary"><small>@menuItem.Name</small></h3>
+                                        </div>
+                                        <div class="d-flex justify-content-between form-control text-center">
+                                            <div class="col-6 badge badge-gree text-center" style="font-size:14px;">
+                                                @menuItem.Category.Name
+                                            </div>
+                                        </div>
+                                        <div class="col-6 text-center h4 text-primary">
+                                            <b>@menuItem.Price$</b>
+
+                                        </div>
+                                        <img id="myImg" src="@menuItem.Image" alt="Snow" class="card-img-top p-2 rounded"/>
+
+
+
+                                        @if (User.IsInRole(SD.CustomerRole) || User.IsInRole(SD.ManagerRole))
+                                        {
+                                         <a asp-page="Details" class="btn btn-success" style="border-radius: 2px;" asp-route-id="@menuItem.Id">Details</a>
+                                        }
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    }
+}
+
+

@@ -1,0 +1,14 @@
+D:\DrozdArtStore deployed\DrozdArtStore.DataAccess\bin\Release\netcoreapp3.1\DrozdArtStore.DataAccess.deps.json
+D:\DrozdArtStore deployed\DrozdArtStore.DataAccess\bin\Release\netcoreapp3.1\DrozdArtStore.DataAccess.dll
+D:\DrozdArtStore deployed\DrozdArtStore.DataAccess\bin\Release\netcoreapp3.1\DrozdArtStore.DataAccess.pdb
+D:\DrozdArtStore deployed\DrozdArtStore.DataAccess\bin\Release\netcoreapp3.1\DrozdArtStore.Models.dll
+D:\DrozdArtStore deployed\DrozdArtStore.DataAccess\bin\Release\netcoreapp3.1\DrozdArtStore.Utility.dll
+D:\DrozdArtStore deployed\DrozdArtStore.DataAccess\bin\Release\netcoreapp3.1\DrozdArtStore.Models.pdb
+D:\DrozdArtStore deployed\DrozdArtStore.DataAccess\bin\Release\netcoreapp3.1\DrozdArtStore.Utility.pdb
+D:\DrozdArtStore deployed\DrozdArtStore.DataAccess\obj\Release\netcoreapp3.1\DrozdArtStore.DataAccess.csprojAssemblyReference.cache
+D:\DrozdArtStore deployed\DrozdArtStore.DataAccess\obj\Release\netcoreapp3.1\DrozdArtStore.DataAccess.AssemblyInfoInputs.cache
+D:\DrozdArtStore deployed\DrozdArtStore.DataAccess\obj\Release\netcoreapp3.1\DrozdArtStore.DataAccess.AssemblyInfo.cs
+D:\DrozdArtStore deployed\DrozdArtStore.DataAccess\obj\Release\netcoreapp3.1\DrozdArtStore.DataAccess.csproj.CoreCompileInputs.cache
+D:\DrozdArtStore deployed\DrozdArtStore.DataAccess\obj\Release\netcoreapp3.1\DrozdArtStore.DataAccess.csproj.CopyComplete
+D:\DrozdArtStore deployed\DrozdArtStore.DataAccess\obj\Release\netcoreapp3.1\DrozdArtStore.DataAccess.dll
+D:\DrozdArtStore deployed\DrozdArtStore.DataAccess\obj\Release\netcoreapp3.1\DrozdArtStore.DataAccess.pdb
